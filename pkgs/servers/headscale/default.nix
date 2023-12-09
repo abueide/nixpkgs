@@ -7,7 +7,7 @@
 }:
 buildGoModule rec {
   pname = "headscale";
-  version = "0.22.3";
+  version = "0.23.0-alpha1";
 
   src = fetchFromGitHub {
     owner = "juanfont";
