@@ -465,6 +465,8 @@ in {
       restartTriggers = [configFile];
 
       environment.GIN_MODE = "release";
+      environment.HEADSCALE_EXPERIMENTAL_FEATURE_SSH = "1";
+
 
       script = ''
         ${optionalString (cfg.settings.db_password_file != null) ''
