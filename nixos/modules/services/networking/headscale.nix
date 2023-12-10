@@ -471,6 +471,8 @@ in {
           export HEADSCALE_DB_PASS="$(head -n1 ${escapeShellArg cfg.settings.db_password_file})"
         ''}
 
+        export HEADSCALE_EXPERIMENTAL_FEATURE_SSH=1
+
         exec ${cfg.package}/bin/headscale serve
       '';
 
