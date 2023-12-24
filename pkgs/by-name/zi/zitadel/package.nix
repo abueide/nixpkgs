@@ -15,7 +15,7 @@
 }:
 
 let
-  version = "2.40.3";
+  version = "2.42.3";
   zitadelRepo = fetchFromGitHub {
     owner = "zitadel";
     repo = "zitadel";
