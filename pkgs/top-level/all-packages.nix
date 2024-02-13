@@ -37394,6 +37394,8 @@ with pkgs;
 
   chessx = libsForQt5.callPackage ../games/chessx { };
 
+  chia-bin = callPackage ../applications/blockchains/chia-bin { };
+
   chiaki = libsForQt5.callPackage ../games/chiaki { };
 
   chiaki4deck = libsForQt5.callPackage ../games/chiaki4deck { };
